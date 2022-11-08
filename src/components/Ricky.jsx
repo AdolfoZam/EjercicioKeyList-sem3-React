@@ -20,18 +20,33 @@ const Ricky = () => {
     }           
     return (
         <div>
-
-           <h1>Rick and Morty</h1>
-              <br /><br />
-              <hr />
-           <div className='title-card'>
-           <h2>{wordRicky.name}</h2> <br />
-           <h2>{wordRicky.name}</h2><br />
-           <h2>{wordRicky.type}</h2><br />
-           <h2>{wordRicky.dimension}</h2>
+            <div className="background-title">
+                <div className="title">
+            <h1>Ricky <span> and </span> Morty</h1>
            </div>
-           <input type="text" value={typeId} onChange={e => setTypeId(e.target.value)}/>
-           <button onClick={searchType}>Search</button>
+            <br /><br />
+              
+           <div className='title middle'>
+                Ricky <span>and</span>Morty
+                </div>
+                <div className="title-bottom">
+                    Ricky <span>and</span>Morty
+                    </div>
+                    <div className='title-divider'></div>
+            <div className="search">
+            <input type="text" value={typeId} onChange={e => setTypeId(e.target.value)}/>
+            < button onClick={searchType}>Search</button>
+            </div>
+                <div className='location-item'>
+                    <ul>
+                        <li><span>Name:</span>{""}{wordRicky.name}</li> <br />
+                        <li><span>Type:</span>{""}{wordRicky.type}</li><br />
+                        <li><span>Dimention</span>{""}{wordRicky.dimension}</li>
+                    </ul>
+                </div>
+           </div>
+          
+          
 
            <ul>
                 {

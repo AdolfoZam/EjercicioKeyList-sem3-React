@@ -15,15 +15,21 @@ const RickyItem = ({ url }) => {
     return (
         <div className='card-item'>
             
-            <div>
-                <li> {url}</li>
+            <div className='img'>
+                {/* <li> {url}</li> */}
                 <img src={findRicky.image} alt="" />
             </div>
-            <div>
-                <li>{findRicky?.name}</li>
-                <li>{findRicky?.status}</li>
-                <li>{findRicky.origin?.name}</li>
-                <li>{findRicky.episode?.length}</li>
+            <div className='item-location'>
+                <ul>
+                    <li>
+                        <span>Name:</span>{findRicky?.name}</li>
+                    <li>
+                        <span>Status:</span>{findRicky?.status}</li>
+                    <li>
+                        <span>Origin</span>{findRicky.origin?.name}</li>
+                    <li>
+                        <span>Episode</span>{findRicky.episode?.length}</li>
+                </ul>
             </div>
         </div>
     );

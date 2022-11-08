@@ -1,3 +1,5 @@
+/*@font-face{font-family:Get Schwifty;src:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3089507/get-schwifty.woff) format("woff")*/
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -12,14 +14,38 @@
 }
 
 .body{
-  gap: 3rem;
+background: darkcyan;
 }
 
 .card-item{
 
   padding: 2rem;
   box-shadow: 2px 3px 5px darkcyan;
+  border-radius: 10px;
   gap: 2rem;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.card-item img{
+  border-radius: 10px;
+}
+.item-location li{
+  list-style: none;
+}
+
+.location-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 2px 3px 5px darkcyan;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.location-item li{
+  list-style: none;
 }
