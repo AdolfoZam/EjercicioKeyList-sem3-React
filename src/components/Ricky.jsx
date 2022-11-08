@@ -21,12 +21,13 @@ const Ricky = () => {
     return (
         <div>
 
-           <h2>Rick and Morty</h2>
-
+           <h1>Rick and Morty</h1>
+              <br /><br />
+              <hr />
            <div className='title-card'>
-           <h2>{wordRicky.name}</h2>
-           <h2>{wordRicky.name}</h2>
-           <h2>{wordRicky.type}</h2>
+           <h2>{wordRicky.name}</h2> <br />
+           <h2>{wordRicky.name}</h2><br />
+           <h2>{wordRicky.type}</h2><br />
            <h2>{wordRicky.dimension}</h2>
            </div>
            <input type="text" value={typeId} onChange={e => setTypeId(e.target.value)}/>

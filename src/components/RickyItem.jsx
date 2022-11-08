@@ -20,10 +20,10 @@ const RickyItem = ({ url }) => {
                 <img src={findRicky.image} alt="" />
             </div>
             <div>
-                <li>{findRicky.residents?.name}</li>
-                <li>{findRicky.residents?.status}</li>
-                <li>{findRicky.residents?.origin.name}</li>
-                <li>{findRicky.residents?.episode.length}</li>
+                <li>{findRicky?.name}</li>
+                <li>{findRicky?.status}</li>
+                <li>{findRicky.origin?.name}</li>
+                <li>{findRicky.episode?.length}</li>
             </div>
         </div>
     );
